@@ -1,6 +1,6 @@
 {
   "name": "require-path-relative",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "path.relative to be used in a require statement",
   "main": "index.js",
   "license": "MIT",
