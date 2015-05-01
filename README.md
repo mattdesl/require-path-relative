@@ -1,4 +1,4 @@
-# reuqire-path-relative
+# require-path-relative
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
@@ -7,6 +7,8 @@ Like `path.relative(from, to)`, but normalizes it to look good in a Node `requir
 For example:
 
 ```js
+var relative = require('require-path-relative')
+
 relative('/modules/utils', '/modules')
 => '../'
 
@@ -22,7 +24,7 @@ relative('/modules', '/modules')
 
 ## Usage
 
-[![NPM](https://nodei.co/npm/reuqire-path-relative.png)](https://www.npmjs.com/package/reuqire-path-relative)
+[![NPM](https://nodei.co/npm/require-path-relative.png)](https://www.npmjs.com/package/require-path-relative)
 
 #### `filepath = relative(from, to, [entry])`
 
@@ -32,4 +34,4 @@ This is handy for generating pretty-looking Node source.
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/mattdesl/reuqire-path-relative/blob/master/LICENSE.md) for details.
+MIT, see [LICENSE.md](http://github.com/mattdesl/require-path-relative/blob/master/LICENSE.md) for details.
