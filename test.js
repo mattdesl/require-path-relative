@@ -1,0 +1,17 @@
+var relative = require('./')
+var test = require('tape')
+
+test('path.relative to be used in a require statement', function(t) {
+  t.equal(relative('/modules/utils', '/modules'), '../')
+  t.equal(relative('/modules/utils', '/modules', 'index.js'), '../index.js')
+  t.equal(relative('/modules/utils', '/modules', './index.js'), '../index.js')
+  t.equal(relative('/modules/utils/foo', '/modules'), '../../')
+  t.equal(relative('/modules/utils/foo', '/modules', 'test.js'), '../../test.js')
+  t.equal(relative('/modules/utils/foo', '/modules', './test.js'), '../../test.js')
+  t.equal(relative('/modules', '/modules'), './')
+  t.equal(relative('/modules', '/modules', 'index'), './index')
+  t.equal(relative('/path/../modules', '/modules', './index'), './index')
+  t.equal(relative('/modules', '/modules/utils', 'test.js'), './utils/test.js')
+  t.equal(relative('/modules', '/modules/utils', './test.js'), './utils/test.js')
+  t.end()
+})

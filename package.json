@@ -1,0 +1,39 @@
+{
+  "name": "require-path-relative",
+  "version": "1.0.0",
+  "description": "path.relative to be used in a require statement",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "require",
+    "relative",
+    "path",
+    "node",
+    "js",
+    "fs",
+    "requires",
+    "nodejs",
+    "common",
+    "commonjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/require-path-relative.git"
+  },
+  "homepage": "https://github.com/mattdesl/require-path-relative",
+  "bugs": {
+    "url": "https://github.com/mattdesl/require-path-relative/issues"
+  }
+}
